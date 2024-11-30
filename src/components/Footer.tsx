@@ -1,21 +1,19 @@
-import React from 'react'
+import { Link } from "expo-router";
+import { View, Text, TouchableOpacity } from "react-native";
 
 const Footer = () => {
   return (
-    <footer >
+    <footer>
       <ul>
         <li>
-          <i></i>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <i></i>
-        </li>
-        <li>
-          <i></i>
+          <Link href="/popular">Popular cities</Link>
         </li>
       </ul>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
