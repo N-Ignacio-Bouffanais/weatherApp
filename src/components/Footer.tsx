@@ -21,10 +21,11 @@ const Footer = () => {
 
 const styles = StyleSheet.create({
   footer: {
+    display: 'flex',
     flexDirection: "row",
     justifyContent: "space-around",
-    padding: 18,
-    height: "80%",
+    padding: 25,
+    height: "10%",
     width: "100%",
   },
   link: {

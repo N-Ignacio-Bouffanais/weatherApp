@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   Div_title:{
-    width: "80%",
+    width: "85%",
   },
   title:{
     fontSize: 20,
