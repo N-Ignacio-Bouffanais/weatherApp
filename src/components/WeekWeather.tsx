@@ -15,13 +15,13 @@ export default WeekWeather
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: "center",
+    display: 'flex',
     alignItems: "center",
-    backgroundColor: "fffffff",
-    padding: 5,
-    borderRadius: 10,
-    marginBottom: 10,
+    backgroundColor: "#ffffff",
+    padding: 10,
+    width: "80%",
+    height: "25%",
+    borderRadius: 15,
   },
   text: {
     fontSize: 18,

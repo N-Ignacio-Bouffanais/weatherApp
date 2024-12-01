@@ -22,10 +22,9 @@ const styles = StyleSheet.create({
   footer: {
     flexDirection: "row",
     justifyContent: "space-around",
-    padding: 16,
-    backgroundColor: "#f8f9fa",
-    borderTopWidth: 1,
-    borderColor: "#dee2e6",
+    padding: 8,
+    height: "80%",
+    width: "100%",
   },
   link: {
     textDecorationLine: "none",

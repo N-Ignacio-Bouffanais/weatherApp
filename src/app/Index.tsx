@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Footer from "../components/Footer";
 import WeekWeather from "../components/WeekWeather";
@@ -29,15 +29,41 @@ const Page: React.FC = () => {
   // }
   return (
     <>
-      <View className="p-4">
-        <Text className="text-lg font-bold">Home Page</Text>
+      <View style={styles.container}>
+        <View style={styles.Div_title}>
+          <Text style={styles.title}>Santiago, CHILE</Text>
+        </View>
+        <WeekWeather />
       </View>
-      <WeekWeather />
+
       <Footer />
     </>
   );
 };
 
 export default App;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#2283ff",
+    width: "100%",
+    height: "90%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  Div_title:{
+    width: "80%",
+  },
+  title:{
+    fontSize: 20,
+    fontWeight: "semibold",
+    color: "white",
+    marginBottom: 20,
+    textAlign: "left",
+    
+  }
+});
 
 
