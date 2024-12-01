@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Mainweather from "../components/Mainweather";
-import "../../global.css";
+import Footer from "../components/Footer";
 
 // Create a QueryClient instance
 const queryClient = new QueryClient();
@@ -33,6 +33,7 @@ const Page: React.FC = () => {
         <Text className="text-lg font-bold">Home Page</Text>
       </View>
       <Mainweather />
+      <Footer />
     </>
   );
 };

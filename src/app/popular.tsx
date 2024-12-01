@@ -1,8 +1,15 @@
+import { Text, View } from "react-native"
+import Footer from "../components/Footer"
 
 
 const Popular = () => {
   return (
-    <><div className="text-red-500">Popular</div><div className="bg-slate-500 w-10 h-10"></div></>
+    <>
+    <View>
+      <Text>Popular cities</Text>
+    </View>
+    <Footer/>
+    </>
   )
 }
 
