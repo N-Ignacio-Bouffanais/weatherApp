@@ -1,17 +1,18 @@
 import { Link } from "expo-router";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, TouchableOpacity, StyleSheet } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 const Footer = () => {
   return (
     <View style={styles.footer}>
       <TouchableOpacity>
         <Link href="/" style={styles.link}>
-          <Text style={styles.text}>Home</Text>
+          <Ionicons style={styles.text} name="home" size={32} color="blue" />
         </Link>
       </TouchableOpacity>
       <TouchableOpacity>
         <Link href="/popular" style={styles.link}>
-          <Text style={styles.text}>Popular Cities</Text>
+          <Ionicons style={styles.text} name="options" size={32} color="black" />
         </Link>
       </TouchableOpacity>
     </View>
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
   footer: {
     flexDirection: "row",
     justifyContent: "space-around",
-    padding: 8,
+    padding: 18,
     height: "80%",
     width: "100%",
   },
